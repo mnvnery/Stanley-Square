@@ -5,6 +5,7 @@ import headerNavLinks from "../data/headerNavLinks"
 import { useRouter } from "next/router"
 import MobileNav from "./MobileNav"
 import siteMetadata from "../data/siteMetadata"
+import LinkButton from "../components/LinkButton"
 
 const Header = () => {
     const router = useRouter()
@@ -31,14 +32,12 @@ const Header = () => {
             <MobileNav/>
         </div>
         <div className="items-center justify-center space-x-5 hidden md:flex">
-            {headerNavLinks.map((link, i) => (
-                <div key={i} className={`uppercase rounded-full px-6 pb-1 text-3xl border-2 hover:bg-transparent border-${link.color} 
-                ${
-                    router.pathname == link.href ? `border-${link.color} bg-transparent text-${link.color}` : `bg-${link.color} text-black hover:text-${link.color} `
-                }`}>
-                    <Link href={link.href}><a>{link.title}</a></Link>
-                </div>
-            ))}
+            <LinkButton title="What's On" href="/whats-on" color="white" router={router}/>
+            <LinkButton title="Shop" href="/shop" color="tred" router={router}/>
+            <LinkButton title="Eat&Drink" href="/eat-drink" color="tgrey" router={router}/>
+            <LinkButton title="Services" href="/services" color="tbrown" router={router}/>
+            <LinkButton title="Offices" href="/offices" color="tpink" router={router}/>
+            <LinkButton title="Visit Us" href="/visit-us" color="tpurple" router={router}/>
         </div>
         </>
     )

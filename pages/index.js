@@ -118,7 +118,7 @@ export default function Home({data, events, shops}) {
             <div dangerouslySetInnerHTML={{__html: data.introParagraph}} className='text-2xl w-5/6 md:text-3xl md:w-3/6'/>
             <Button text='Find out more' justify='justify-end'/>
             <EmblaCarousel title="What's on at Stanley Square">
-              {events.map((event, i) => (
+              {events.slice(0,6).map((event, i) => (
                 <div className="embla__slide py-8 relative" key={i}>
                   <div className="relative">
                     <div className="relative h-[30vh] w-full md:h-[45vh]">
