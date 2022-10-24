@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('../public/fonts/founders-grotesk-regular.woff2') format('woff2');
+  font-weight: normal;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  
+}
+
+body {
+  font-family: 'Founders Grotesk';
+}
+
+h1 {
+  font-size: 2.2em; 
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.paragraph p {
+  margin-bottom: 25px;
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  color: black;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+}
+
+.embla__slide {
+  padding-left: 2px;
+}
+
+.embla__dots {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.embla__dot {
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.embla__dot:after {
+  background-color: transparent;
+  border: 1px solid black;
+  width: 100%;
+  height: 17px;
+  border-radius: 50%;
+  content: "";
+}
+
+.embla__dot.is-selected:after {
+  background-color: black;
+  opacity: 1;
+}
+
+
+
+@media (max-width: 768px) {
+  .embla__slide:first-child {
+    padding-left: 0.1em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .sale-about p {
+    margin-left: 1.5em;
+  }
+
+  .embla__dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .embla__dot:after {
+    height: 12px;
+  }
+  .embla__slide {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .event-card {
+    border-bottom: 1px solid black;
+    padding: 1.5em 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .embla__slide:nth-child(3n) {
+    border-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  .embla__container {
+    margin-left: -1.5px;
+    grid-auto-columns: 33.25%;
+  }
+  .embla__slide {
+    border-right: 1px solid black;
+    padding-right: 1em;
+    margin-right: 1em;
+  }
+  .event-card {
+    border-bottom: 1px solid black;
+    padding: 2em 1em;
+  }
+  
+  .event-card:nth-child(3n-1){
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+  }
+  
+  .event-card:nth-child(3n-2){
+    padding-left: 0;
+  }
+  
+  .event-card:nth-child(3n){
+    padding-right: 0;
+  }
+}
