@@ -129,7 +129,7 @@ const MobileNav = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="flex grow items-center justify-center text-white text-lg"><IoIosPin /> <a href={siteMetadata.maps} target="_blank">FIND US</a></div>
+                  <div className="flex grow items-center justify-center text-white text-lg"><IoIosPin /> <a href={siteMetadata.maps} target="_blank" rel='noreferrer'>FIND US</a></div>
                 </div>
               </div>
             </motion.div>

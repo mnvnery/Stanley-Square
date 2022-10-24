@@ -41,7 +41,7 @@ export default function VisitUs({data, shops}) {
                 <div className='md:mr-20'>
                     <Title title='Opening Hours'/>
                     {data.openingTimes.map((d, i) => (
-                        <div className='border-b border-black flex justify-between'>
+                        <div key={i} className='border-b border-black flex justify-between'>
                             <div>{d.day}</div>
                             <div>{d.times}</div>
                         </div>
@@ -60,7 +60,7 @@ export default function VisitUs({data, shops}) {
                 <Title title='How to get here'/>
                 <div className='md:grid grid-cols-4 gap-10'>
                     {data.howToGetHere.map((t, i) => (
-                        <div>
+                        <div key={i}>
                             <div className='text-2xl md:text-3xl mb-5'>{t.title}</div>
                             <div dangerouslySetInnerHTML={{__html: t.info }} className='text-xl leading-tight mb-5 md:mb-0'/>
                         </div>

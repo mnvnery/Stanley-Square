@@ -16,7 +16,7 @@ const Header = () => {
                 <a className="hover:text-tred">Instagram/</a>
                 <a className="hover:text-tpink">Facebook</a>
             </div>
-            <div className="grow py-2 px-4 items-center justify-end hidden md:flex"><IoIosPin /> <a href={siteMetadata.maps} target="_blank">FIND US</a></div>
+            <div className="grow py-2 px-4 items-center justify-end hidden md:flex"><IoIosPin /> <a href={siteMetadata.maps} target="_blank" rel='noreferrer'>FIND US</a></div>
             <div className="py-2 px-4 border-l border-white hidden md:block">9AM-5:30PM</div>
         </div>
         <div className="mt-20 mb-14 hidden md:block">

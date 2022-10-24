@@ -12,19 +12,19 @@ const Footer = ({shops}) => {
                 <div>
                 <div className="uppercase text-tred border-b border-tred mb-3">Retail</div>
                     {retail.map((shop, i) => (
-                        <div className="md:text-2xl">{shop.title}</div>
+                        <div className="md:text-2xl" key={i}>{shop.title}</div>
                     ))}
                 </div>
                 <div>
                     <div className="uppercase text-tgrey border-b border-tgrey mb-3">Eat & Drink</div>
                     {eatDrink.map((shop, i) => (
-                        <div className="md:text-2xl">{shop.title}</div>
+                        <div className="md:text-2xl" key={i}>{shop.title}</div>
                     ))}
                 </div>
                 <div>
                     <div className="uppercase text-torange border-b border-torange mb-3">Retail</div>
                     {services.map((shop, i) => (
-                        <div className="md:text-2xl">{shop.title}</div>
+                        <div className="md:text-2xl" key={i}>{shop.title}</div>
                     ))}
                 </div>
             </div>
@@ -50,9 +50,9 @@ const Footer = ({shops}) => {
                     </div>
                     <div>
                         <div className="text-tred">Follow</div>
-                        <div><a href={siteMetadata.instagram} target='_blank' className="hover:underline">Instagram</a></div>
-                        <div><a href={siteMetadata.twitter} target='_blank' className="hover:underline">Twitter</a></div>
-                        <div><a href={siteMetadata.facebook} target='_blank' className="hover:underline">Facebook</a></div>
+                        <div><a href={siteMetadata.instagram} target='_blank' rel='noreferrer' className="hover:underline">Instagram</a></div>
+                        <div><a href={siteMetadata.twitter} target='_blank' rel='noreferrer' className="hover:underline">Twitter</a></div>
+                        <div><a href={siteMetadata.facebook} target='_blank' rel='noreferrer' className="hover:underline">Facebook</a></div>
                     </div>
                 </div>
                 <div className="md:hidden leading-tight">
