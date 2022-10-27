@@ -59,7 +59,7 @@ const MobileNav = () => {
       <div
         className={`fixed top-0 left-0 z-10 h-full w-full transform duration-500 ease-in-out ${
           navShow ? 'translate-x-0' : 'translate-x-full'
-        } ${navShow ? 'bg-white' : 'bg-transparent'}`}
+        } ${navShow ? 'bg-black' : 'bg-transparent'}`}
       >
         <div className="flex border-b border-white text-xl justify-center md:justify-start bg-black text-white">
             <div className="uppercase md:border-r border-white px-6 py-2">
@@ -95,13 +95,13 @@ const MobileNav = () => {
           </button>
         </div>
         <nav className="fixed h-full w-full bg-black">
-          <motion.div initial={false} animate={navShow ? 'open' : 'closed'} variants={variants} className='flex flex-col items-center space-y-2'>
+          <motion.div initial={false} animate={navShow ? 'open' : 'closed'} variants={variants} className='flex flex-col items-center space-y-3 my-5'>
             {headerNavLinks.map((link) => (
               <motion.div variants={item} key={link.title}>
                 <Link
                   href={link.href}
                 >
-                  <a className="text-2xl font-bold uppercase tracking-wide" onClick={onToggleNav}>
+                  <a className="text-4xl uppercase tracking-wide" onClick={onToggleNav}>
                   <div
                     className={`py-2 px-5 bg-${link.color} text-black inline-block text-center rounded-full`}
                   >
