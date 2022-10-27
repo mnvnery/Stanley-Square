@@ -8,27 +8,27 @@ const Footer = ({shops}) => {
     const services = shops.filter(shop => shop.category == 'Services');
     return (
         <div className='bg-black'>
-            <div className="grid grid-cols-2 m-5 gap-5 md:grid-cols-4 md:gap-12 md:text-3xl md:my-10 md:mx-8">
+            <div className="grid grid-cols-2 m-5 gap-5 md:grid-cols-4 md:gap-12 md:text-3xl md:my-10 md:mx-8 xxl:mx-32 xxl:my-20 xxl:text-5xl">
                 <div>
                 <div className="uppercase text-tred border-b border-tred mb-3">Retail</div>
                     {retail.map((shop, i) => (
-                        <div className="md:text-2xl" key={i}>{shop.title}</div>
+                        <div className="md:text-2xl xxl:text-4xl" key={i}>{shop.title}</div>
                     ))}
                 </div>
                 <div>
                     <div className="uppercase text-tgrey border-b border-tgrey mb-3">Eat & Drink</div>
                     {eatDrink.map((shop, i) => (
-                        <div className="md:text-2xl" key={i}>{shop.title}</div>
+                        <div className="md:text-2xl xxl:text-4xl" key={i}>{shop.title}</div>
                     ))}
                 </div>
                 <div>
                     <div className="uppercase text-torange border-b border-torange mb-3">Retail</div>
                     {services.map((shop, i) => (
-                        <div className="md:text-2xl" key={i}>{shop.title}</div>
+                        <div className="md:text-2xl xxl:text-4xl" key={i}>{shop.title}</div>
                     ))}
                 </div>
             </div>
-            <div className="border-y border-white py-10 mx-5 md:mx-8 grid grid-cols-2 md:grid-cols-4 md:gap-12 md:text-2xl">
+            <div className="border-y border-white py-10 mx-5 md:mx-8 grid grid-cols-2 md:grid-cols-4 md:gap-12 md:text-2xl xxl:text-4xl xxl:mx-32 xxl:py-20">
                 <div className="relative h-24 w-24 md:w-40 md:h-40">
                     <Image src='/logo-mobile.svg' layout='fill' objectFit="contain"/>
                 </div>
@@ -63,7 +63,7 @@ const Footer = ({shops}) => {
                     <div>All rights reserved</div>
                 </div>
             </div>
-            <div className="flex justify-between pt-2 pb-20 mx-5 text-sm md:mx-8 md:text-2xl">
+            <div className="flex justify-between pt-2 pb-20 mx-5 text-sm md:mx-8 md:text-2xl xxl:text-4xl xxl:mx-32 xxl:py-5 xxl:mb-20">
                 <div>Design by: <a href="studiodbd.com" target='_blank' className="underline hover:text-tpurple">StudioDBD</a></div>
                 <div>Copyright © 2022 Stanley Square</div>
             </div>

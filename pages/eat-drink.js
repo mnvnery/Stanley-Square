@@ -45,12 +45,12 @@ export default function EatDrink({data, shops}) {
         <>
             <HeroSection image={data.heroImg.url} text={data.heroText} />
             <FoodIntro title='Eat & Drink' image1={data.image1.url} image2={data.image2.url} text1={data.paragraph1} text2={data.paragraph2} pullOutQuote={data.pullOutQuote} quoteImage={data.quoteImage.url} svgPath={svg} viewBox={viewBox} />
-            <div className="bg-tbeige">
+            <div className="bg-tbeige mt-[-2px]">
             <div className="w-4/5 mx-auto text-center md:w-4/12">
                     <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox={viewBox}><path fill='#929292' d={svg} /></svg>
                 </div>
             </div>
-            <ShopSection quote={data.shopsIntro} shops={filteredShops} illustration={data.illustration.url} paddingBottom="pb-10" />
+            <ShopSection shops={filteredShops} illustration={data.illustration.url} paddingBottom="pb-10" />
             <Form title={data.formTitle} info={data.formInfo}/>
             <Footer shops={shops}/>
         </>

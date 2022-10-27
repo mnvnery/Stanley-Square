@@ -11,7 +11,7 @@ const Header = () => {
     const router = useRouter()
     return (
         <>
-        <div className="flex border-b border-white text-xl justify-center md:justify-start">
+        <div className="flex border-b border-white text-xl justify-center md:justify-start xxl:text-4xl">
             <div className="uppercase md:border-r border-white px-6 py-2">
                 <a className="hover:text-tpurple">Twitter/</a>
                 <a className="hover:text-tred">Instagram/</a>
@@ -20,8 +20,8 @@ const Header = () => {
             <div className="grow py-2 px-4 items-center justify-end hidden md:flex"><IoIosPin /> <a href={siteMetadata.maps} target="_blank" rel='noreferrer'>FIND US</a></div>
             <div className="py-2 px-4 border-l border-white hidden md:block">9AM-5:30PM</div>
         </div>
-        <div className="mt-20 mb-14 hidden md:block">
-            <div className="relative h-20">
+        <div className="mt-20 mb-14 hidden md:block xxl:my-20">
+            <div className="relative h-20 xxl:h-24">
                 <Link href='/'><a><Image src='/logo.svg' layout='fill' objectFit="contain"/></a></Link>
             </div>
         </div>
@@ -38,6 +38,9 @@ const Header = () => {
             <LinkButton title="Services" href="/services" color="tbrown" router={router}/>
             <LinkButton title="Offices" href="/offices" color="tpink" router={router}/>
             <LinkButton title="Visit Us" href="/visit-us" color="tpurple" router={router}/>
+            {/*
+            <div className="bg-white text-black hover:bg-transparent hover:text-tgrey">WHAT'S ON</div>
+            */}
         </div>
         </>
     )

@@ -58,3 +58,14 @@
     .font-weight-bold::after {
     transform: rotate(0deg);
     }
+
+@media (min-width: 1980px) {
+    .faq__question-button::after {
+        transform: scale(2.5) rotate(90deg);
+    }
+    .font-weight-bold::after {
+        transform: scale(2.5) rotate(0deg);
+        margin-right: 35px;
+        margin-top: -45px;
+    }
+}

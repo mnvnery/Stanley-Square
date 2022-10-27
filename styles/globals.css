@@ -181,3 +181,25 @@ h1 {
     padding-right: 0;
   }
 }
+
+@media (min-width: 1980px) {
+  h1 {
+    font-size: 1.8em;
+    width: 85%;
+    margin-bottom: 50px;
+  }
+
+  .paragraph p {
+    margin-bottom: 50px;
+  }
+
+  .embla__slide {
+    border-right: 1px solid black;
+    padding-right: 2em;
+    margin-right: 2em;
+  }
+
+  .event-card {
+    padding: 3em 2em;
+  }
+}

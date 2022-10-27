@@ -1,7 +1,7 @@
 import Link from "next/link"
 const LinkButton = ({color, href, title, router}) => {
     return (
-        <div className={`uppercase rounded-full px-6 pb-1 text-3xl border-2 hover:bg-transparent border-${color} 
+        <div className={`uppercase rounded-full px-6 pb-1 text-3xl border-2 hover:bg-transparent border-${color} xxl:text-6xl xxl:px-8 xxl:mb-10
         ${
             router.pathname == href ? `border-${color} bg-transparent text-${color}` : `bg-${color} text-black hover:text-${color} `
         }`}>
