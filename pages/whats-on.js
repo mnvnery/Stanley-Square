@@ -40,7 +40,8 @@ export default function WhatsOn({data, events, shops}) {
     return (  
         <>
         <div className='w-full border-t border-white md:mt-16 mb-4 xxl:mb-10'></div>
-        <div className='mx-5 md:mx-0 xxl:mx-32'>
+        <div className='px-5 md:px-8 md:mx-0 xxl:mx-32'>
+
         <LeftMotion>
         <div className='uppercase border-white mb-10 text-4xl md:text-8xl md:w-4/5' dangerouslySetInnerHTML={{__html: data.heroHeader}}/>
         </LeftMotion>
@@ -82,13 +83,15 @@ export default function WhatsOn({data, events, shops}) {
             <HightlightEvent image={data.highlightEvents[1].thumbnail.url} title={data.highlightEvents[1].title} intro={data.highlightEvents[1].intro}/>
         </div>
         </SoftMotion>
-        <div className='relative mt-[-2px]'>
+
+        <div className='relative mt-[-2px] bg-white pt-2'>
+
             <div className='relative w-full bg-white h-[30vh] md:h-[100vh]'>
                 <Image src={data.illustration.url} objectFit='cover' layout='fill'/>
             </div>
             <div dangerouslySetInnerHTML={{__html: data.pullOutCopy}} className='absolute top-10 left-5 uppercase text-black text-4xl md:left-10 md:top-16 md:text-7xl xxl:text-9xl'/>
         </div>
-        <Form title={data.formTitle} info={data.formInfo}/>
+
         <Footer shops={shops}/>
         </>
     )

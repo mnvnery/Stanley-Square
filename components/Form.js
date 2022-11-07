@@ -7,7 +7,7 @@ const Form = ({title, info}) => {
             <SoftMotion>
             <div className="relative h-[18vh] w-auto md:hidden">
                 <Image src='/form.png' objectFit='contain' layout='fill' />
-                <div className="absolute top-3 left-5 text-3xl uppercase w-2/4">
+                <div className="absolute top-3 left-5 text-3xl uppercase w-3/4">
                     {title}
                 </div>
             </div>

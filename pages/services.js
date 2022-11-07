@@ -54,7 +54,6 @@ export default function Services({data, shops}) {
                 </div>
             </div>
             <ShopSection quote={data.shopsIntro} shops={filteredShops} illustration={data.illustration.url} paddingBottom='pb-5' />
-            <Form title={data.formTitle} info={data.formInfo}/>
             <Footer shops={shops}/>
         </>
     )

@@ -6,7 +6,7 @@ const BorderMotion = () => (
       whileInView={{ scale: 1 }}
       transition={{ stiffness: 50, duration: 0.9 }}
     >
-      <div className="mt-4 border-b border-black md:border-b-2"></div>
+      <div className="mt-1 border-b border-black md:border-b-2 md:mt-4"></div>
   </motion.div>
 )
 

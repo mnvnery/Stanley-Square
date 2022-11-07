@@ -93,7 +93,6 @@ export default function Offices({data, shops}) {
         </div>
         </SoftMotion>
         </div>
-        <Form title={data.formTitle} info={data.formInfo}/>
         <Footer shops={shops}/>
         </>
     )

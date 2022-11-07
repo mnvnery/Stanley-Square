@@ -92,7 +92,6 @@ export default function VisitUs({data, shops}) {
             <div className='mb-8 md:mb-20'></div>
             <Accordion questionsAnswers={questionsAnswers}/>
         </div>
-        <Form title={data.formTitle} info={data.formInfo}/>
         <Footer shops={shops}/>
         </>
     )

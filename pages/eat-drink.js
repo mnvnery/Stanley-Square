@@ -51,7 +51,7 @@ export default function EatDrink({data, shops}) {
                 </div>
             </div>
             <ShopSection shops={filteredShops} illustration={data.illustration.url} paddingBottom="pb-10" />
-            <Form title={data.formTitle} info={data.formInfo}/>
+
             <Footer shops={shops}/>
         </>
     )
