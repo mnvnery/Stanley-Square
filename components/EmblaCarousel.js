@@ -33,7 +33,7 @@ export const EmblaCarousel = ({ children, title }) => {
   return (
     <>
       <div className="flex w-full items-center justify-between border-b border-black pb-2">
-        <div className="md:mb-3 text-xl md:text-2xl">{title}</div>
+        <div className="md:mb-3 text-xl md:text-2xl xxl:text-5xl">{title}</div>
         <div className="mb-2 space-x-1 md:space-x-3 text-4xl embla__dots">
           {scrollSnaps.map((_, index) => (
             <button

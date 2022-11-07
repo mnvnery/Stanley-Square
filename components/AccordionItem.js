@@ -14,7 +14,7 @@ const AccordionItem = ({
             aria-expanded={ariaExpanded}
             aria-controls={`faq${index + 1}_desc`}
             data-qa="faq__question-button"
-            className={`faq__question-button ${fontWeightBold} text-tpurple text-2xl md:text-3xl text-left`}
+            className={`faq__question-button ${fontWeightBold} text-tpurple text-2xl md:text-3xl text-left xxl:text-6xl`}
             onClick={onClick}
         >
             {item.question}
@@ -24,7 +24,7 @@ const AccordionItem = ({
         <div
             id={`faq${index + 1}_desc`}
             data-qa="faq__desc"
-            className={`faq__desc ${showDescription} text-xl leading-none md:leading-tight md:text-2xl`}
+            className={`faq__desc ${showDescription} text-xl leading-none md:leading-tight md:text-2xl xxl:text-5xl`}
         dangerouslySetInnerHTML={{__html: item.answer}}/>
         </div>
     </div>
