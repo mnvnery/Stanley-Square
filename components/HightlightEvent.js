@@ -4,7 +4,9 @@ const HightlightEvent = ({image, title, intro }) => {
     return (
     <LeftMotion>
     <div className='relative py-10 xxl:py-20'>
+
         <div className='relative w-5/6 mx-auto mb-5 h-[40vh] md:h-[85vh] xxl:h-[65vh] xxl:w-4/6'>
+
             <Image src={image} objectFit='cover' layout='fill' className='rounded-4xl'/>
         </div>
         <div className="absolute bottom-0 w-auto xxl:bottom-10 xxl:left-20">

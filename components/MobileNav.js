@@ -102,6 +102,7 @@ const MobileNav = () => {
                   href={link.href}
                 >
                   <a className="text-3xl uppercase tracking-wide" onClick={onToggleNav}>
+
                   <div
                     className={`py-2 px-5 bg-${link.color} text-black inline-block text-center rounded-full`}
                   >
