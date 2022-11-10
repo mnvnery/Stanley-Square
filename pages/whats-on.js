@@ -80,7 +80,6 @@ export default function WhatsOn({data, events, shops}) {
                     </motion.div>
                 ))}
             </div>
-            <HightlightEvent image={data.highlightEvents[1].thumbnail.url} title={data.highlightEvents[1].title} intro={data.highlightEvents[1].intro}/>
         </div>
         </SoftMotion>
 
