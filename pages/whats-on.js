@@ -57,7 +57,7 @@ export default function WhatsOn({data, events, shops}) {
             <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl text-black uppercase pb-1 w-2/4 md:pb-4 md:text-5xl xxl:text-7xl'>WHAT’S ON <BorderMotion /></div>
         </div>
         <div className='bg-white text-black px-8 md:px-10 z-[1] relative mt-[-5px] xxl:px-32'>
-            <HightlightEvent image={data.highlightEvents[0].thumbnail.url} title={data.highlightEvents[0].title} intro={data.highlightEvents[0].intro}/>
+            {/* <HightlightEvent image={data.highlightEvents[0].thumbnail.url} title={data.highlightEvents[0].title} intro={data.highlightEvents[0].intro}/> */}
             <div className='grid md:grid-cols-3 border-t border-black mt-5 md:mt-0'>
                 {remainingEvents.map((event, i) => (
                     <motion.div initial={{ y: 100, opacity: 0 }}
@@ -79,7 +79,6 @@ export default function WhatsOn({data, events, shops}) {
                     </motion.div>
                 ))}
             </div>
-            <HightlightEvent image={data.highlightEvents[1].thumbnail.url} title={data.highlightEvents[1].title} intro={data.highlightEvents[1].intro}/>
         </div>
         </SoftMotion>
         <div className='relative mt-[-2px] bg-white pt-2'>
