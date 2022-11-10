@@ -51,6 +51,7 @@ export default function EatDrink({data, shops}) {
                 </div>
             </div>
             <ShopSection shops={filteredShops} illustration={data.illustration.url} paddingBottom="pb-10" />
+
             <Footer shops={shops}/>
         </>
     )

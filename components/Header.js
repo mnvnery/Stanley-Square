@@ -40,6 +40,7 @@ const Header = () => {
             <LinkButton title="Visit Us" href="/visit-us" color="tpurple" router={router}/>
             <div className="hidden hover:text-tbrown">hi</div>
             <div className="hidden hover:text-twhite">hi</div>
+
             {/*
             <div className="bg-white text-black hover:bg-transparent hover:text-tgrey">WHAT'S ON</div>
             */}
