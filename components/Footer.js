@@ -6,6 +6,7 @@ const Footer = ({shops}) => {
     const eatDrink = shops.filter(shop => shop.category == 'Eat&Drink');
     const retail = shops.filter(shop => shop.category == 'Retail');
     const services = shops.filter(shop => shop.category == 'Services');
+    console.log(shops)
     return (
         <div className='bg-black'>
             <div className="grid grid-cols-2 m-5 gap-5 md:grid-cols-4 md:gap-12 md:text-3xl md:my-10 md:mx-8 xxl:mx-32 xxl:my-20 xxl:text-5xl">
