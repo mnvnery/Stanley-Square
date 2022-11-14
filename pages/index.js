@@ -28,7 +28,7 @@ export async function getStaticProps() {
   })
 
   const shop = await request({
-    query: SHOPS_QUERY,
+    query: SHOPS_QUERY
   })
 
   return {
