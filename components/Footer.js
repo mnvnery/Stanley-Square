@@ -6,36 +6,51 @@ const Footer = ({shops}) => {
     const eatDrink = shops.filter(shop => shop.category == 'Eat&Drink');
     const retail = shops.filter(shop => shop.category == 'Retail');
     const services = shops.filter(shop => shop.category == 'Services');
-    console.log(shops)
     return (
         <div className='bg-black'>
             <div className="grid grid-cols-2 m-5 gap-5 md:grid-cols-4 md:gap-12 md:text-3xl md:my-10 md:mx-8 xxl:mx-32 xxl:my-20 xxl:text-5xl">
                 <div>
                 <div className="uppercase text-tred border-b border-tred mb-3">Retail</div>
-                    {retail.map((shop, i) => (
-                        <div className="md:text-2xl xxl:text-4xl" key={i}>{shop.title}</div>
+                    {retail.sort((a,b)=> a.title > b.title).map((shop, i) => (
+                        <div key={i}>
+                            {shop.link === "" 
+                            ? <div className="md:text-2xl xxl:text-4xl">{shop.title}</div>
+                            : <a href={shop.link} target='_blank' rel="noreferrer" className="cursor-pointer hover:text-tred"><div className="md:text-2xl xxl:text-4xl">{shop.title}</div></a>
+                            }
+                        </div>
                     ))}
                 </div>
                 <div>
                     <div className="uppercase text-tgrey border-b border-tgrey mb-3">Eat & Drink</div>
-                    {eatDrink.map((shop, i) => (
-                        <div className="md:text-2xl xxl:text-4xl" key={i}>{shop.title}</div>
+                    {eatDrink.sort((a,b)=> a.title > b.title).map((shop, i) => (
+                        <div key={i}>
+                            {shop.link === "" 
+                            ? <div className="md:text-2xl xxl:text-4xl">{shop.title}</div>
+                            : <a href={shop.link} target='_blank' rel="noreferrer" className="cursor-pointer hover:text-tgrey"><div className="md:text-2xl xxl:text-4xl">{shop.title}</div></a>
+                            }
+                        </div>
                     ))}
                 </div>
                 <div>
                     <div className="uppercase text-torange border-b border-torange mb-3">Services</div>
-                    {services.map((shop, i) => (
-                        <div className="md:text-2xl xxl:text-4xl" key={i}>{shop.title}</div>
+                    {services.sort((a,b)=> a.title > b.title).map((shop, i) => (
+                        <div key={i}>
+                            {shop.link === "" 
+                            ? <div className="md:text-2xl xxl:text-4xl">{shop.title}</div>
+                            : <a href={shop.link} target='_blank' rel="noreferrer" className="cursor-pointer hover:text-torange"><div className="md:text-2xl xxl:text-4xl">{shop.title}</div></a>
+                            }
+                        </div>
                     ))}
                 </div>
             </div>
             <div className="border-y border-white py-10 mx-5 md:mx-8 grid grid-cols-2 md:grid-cols-4 md:gap-12 md:text-2xl xxl:text-4xl xxl:mx-32 xxl:py-20">
                 <div className="relative h-24 w-24 md:w-40 md:h-40">
-                    <Image src='/logo-mobile.svg' layout='fill' objectFit="contain"/>
+                    <Link href='/'><a><Image src='/logo-mobile.svg' layout='fill' objectFit="contain"/></a></Link>
                 </div>
                 <div className="hidden md:block">
+                    <a href={siteMetadata.maps} className='hover:underline'>
                     <div className="text-tred">Stanley Square</div>
-                    <div>Sale<br/>Manchester<br/>M33 7ZZ</div><br/>
+                    <div>Sale<br/>Manchester<br/>M33 7ZZ</div></a><br/>
                     <div><a href={`tel:${siteMetadata.phone}`} className="hover:underline">{siteMetadata.phone}</a></div>
                     <div><a href={`mailto:${siteMetadata.email}`} className="hover:underline">{siteMetadata.email}</a></div><br/><br/>
                     <div>All rights reserved</div>
@@ -43,11 +58,11 @@ const Footer = ({shops}) => {
                 <div className="flex space-x-8 md:space-x-20">
                     <div>
                         <div className="text-tred">Visit</div>
-                        <div><Link href='/shop'><a className="hover:underline">Shop</a></Link></div>
-                        <div><Link href='/food-drink'><a className="hover:underline">Food&Drink</a></Link></div>
+                        <div><Link href='/retail'><a className="hover:underline">Retail</a></Link></div>
+                        <div><Link href='/eat-drink'><a className="hover:underline">Eat&Drink</a></Link></div>
                         <div><Link href='/services'><a className="hover:underline">Services</a></Link></div>
-                        <div><Link href='/FAQs'><a className="hover:underline">FAQs</a></Link></div>
-                        <div><Link href='/find-us'><a className="hover:underline">Find Us</a></Link></div>
+                        <div><Link href='/visit-us/#faqs'><a className="hover:underline">FAQs</a></Link></div>
+                        <div><Link href='/visit-us'><a className="hover:underline">Visit Us</a></Link></div>
                     </div>
                     <div>
                         <div className="text-tred">Follow</div>
