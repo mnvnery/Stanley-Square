@@ -18,7 +18,7 @@ const Header = () => {
                 <a href={siteMetadata.facebook} className="hover:text-tpink" target='_blank' rel="noreferrer">Facebook</a>
             </div>
             <div className="grow py-2 px-4 items-center justify-end hidden md:flex"><IoIosPin /> <a href={siteMetadata.maps} target="_blank" rel='noreferrer'>FIND US</a></div>
-            <div className="py-2 px-4 border-l border-white hidden md:block">9AM-5:30PM</div>
+            <div className="py-2 px-4 border-l border-white hidden md:block">9:30AM-11PM</div>
         </div>
         <div className="mt-20 mb-14 hidden md:block xxl:my-20">
             <div className="relative h-20 xxl:h-24">

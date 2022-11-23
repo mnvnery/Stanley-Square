@@ -128,7 +128,7 @@ export default function Home({data, events, shops}) {
 
                 <Link href={`/${sector.slug}`}>
 
-                <div className='flip-card h-[35vh] md:h-[65vh] w-full'>
+                <div className='flip-card h-[35vh] md:h-[65vh] w-full cursor-pointer'>
                   <div className='flip-card-inner'>
                     <div className='flip-card-front rounded-2xl'>
                       <Image src={sector.thumbnail.url} layout='fill' objectFit='cover' className='rounded-2xl'/>
