@@ -51,7 +51,7 @@ export default function VisitUs({data, shops}) {
                         </div>
                     ))}
                     <div className='mt-12 w-3/4 md:w-2/4 text-xl md:leading-tight xxl:text-4xl'>
-                        <div className='underline'>Late night shopping</div>
+                        <div className='underline'>Good to know</div>
                         <div dangerouslySetInnerHTML={{__html: data.lateNightShopping}}/>
                     </div>
                 </div>

@@ -59,7 +59,7 @@ export default function WhatsOn({data, events, shops}) {
         </div>
         <div className='bg-white text-black px-8 md:px-10 z-[1] relative mt-[-5px] xxl:px-32'>
             <HightlightEvent image={data.highlightEvents[0].thumbnail.url} title={data.highlightEvents[0].title} intro={data.highlightEvents[0].intro}/>
-            <div className='grid md:grid-cols-3 border-t border-black mt-5 md:mt-0'>
+            <div className='grid md:grid-cols-3 border-t border-black mt-5 md:mt-10'>
                 {remainingEvents.map((event, i) => (
                     <motion.div initial={{ y: 100, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
@@ -73,24 +73,22 @@ export default function WhatsOn({data, events, shops}) {
                                 <div className="text-xl underline xxl:text-3xl">{event.title}</div>
                                 <div className="text-xl md:w-[90%] xxl:text-3xl">{event.intro}</div>
                             </div>
-                            <div className='hidden md:block'>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.35 13.46" className='w-16'><path d="M37.82,9.04c-1.12,1.12-1.75,2.64-1.75,4.22v.19s18.29-6.73,18.29-6.73L36.07,0V.27c0,1.58,.63,3.1,1.75,4.23h0c.27,.27,.27,.71,0,.98h0c-.27,.27-.71,.27-.98,0l-.08-.08c-1.12-1.12-2.63-1.75-4.21-1.75h0c-.81,0-1.46,.66-1.46,1.46v1.28h-14.48s-2.19-2.7-2.19-2.7H0s2.45,3.02,2.45,3.02L0,9.75H14.41s2.19-2.7,2.19-2.7h14.48s0,1.21,0,1.21c0,.85,.69,1.54,1.54,1.54h0c1.58,0,3.1-.63,4.21-1.75h0c.27-.27,.71-.27,.98,0h0c.27,.27,.27,.71,0,.98h0ZM4.17,6.73l-1.37-1.69H13.78s1.37,1.69,1.37,1.69H4.17Z"/></svg>
-                            </div>
                         </div>
                     </motion.div>
                 ))}
             </div>
         </div>
         </SoftMotion>
-
-        <div className='relative mt-[-2px] bg-white pt-2'>
-
-            <div className='relative w-full bg-white h-[30vh] md:h-[100vh]'>
-                <Image src={data.illustration.url} objectFit='cover' layout='fill'/>
+        <div className='bg-white text-black p-8 md:p-10 z-[1] relative mt-[-5px] xxl:p-32'>
+        <SoftMotion>
+        <div className='md:grid grid-cols-2 bg-white'>
+            <div className='relative w-100 h-[45vh] md:h-[60vh] md:mr-24 mb-[25px]'>
+            <Image src={data.illustration.url} objectFit='cover' layout='fill' className='rounded-3xl'/>
             </div>
-            <div dangerouslySetInnerHTML={{__html: data.pullOutCopy}} className='absolute top-10 left-5 uppercase text-black text-4xl md:left-10 md:top-16 md:text-7xl xxl:text-9xl'/>
+            <div dangerouslySetInnerHTML={{__html: data.pullOutCopy}} className='paragraph md:mr-36 sale-about text-2xl xxl:text-5xl self-center'/>
         </div>
-
+        </SoftMotion>
+        </div>
         <Footer shops={shops}/>
         </>
     )
