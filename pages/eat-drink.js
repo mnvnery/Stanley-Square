@@ -51,6 +51,7 @@ export default function EatDrink({data, shops}) {
                 </div>
             </div>
             <ShopSection shops={filteredShops} illustration={data.illustration.url} color="tgrey" paddingBottom="pb-10" />
+            <div className="hidden hover:bg-tgrey">hi</div>
             <Footer shops={shops}/>
         </>
     )
