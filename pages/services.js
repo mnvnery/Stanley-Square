@@ -54,6 +54,7 @@ export default function Services({data, shops}) {
                 </div>
             </div>
             <ShopSection quote={data.shopsIntro} shops={filteredShops} illustration={data.illustration.url} colour="tbrown" paddingBottom='pb-5' />
+            <div className="hidden hover:bg-tbrown">hi</div>
             <Footer shops={shops}/>
         </>
     )
