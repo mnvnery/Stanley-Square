@@ -31,7 +31,7 @@ const Header = () => {
             </div>
             <MobileNav/>
         </div>
-        <div className="items-center justify-center space-x-6 hidden md:flex">
+        <div className="items-center justify-center space-x-6 hidden md:flex md:sticky md:top-0 md:bg-black md:py-5 md:z-10">
             <LinkButton title="What's On" href="/whats-on" color="twhite" router={router}/>
             <LinkButton title="Retail" href="/retail" color="tred" router={router}/>
             <LinkButton title="Eat&Drink" href="/eat-drink" color="tgrey" router={router}/>

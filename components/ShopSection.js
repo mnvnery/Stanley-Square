@@ -4,7 +4,7 @@ import RightMotion from "./RightMotion"
 import SoftMotion from "./SoftMotion"
 import LeftMotion from "./LeftMotion"
 
-const ShopSection = ({quote, shops, illustration, paddingTop, paddingBottom}) => {
+const ShopSection = ({quote, shops, illustration, paddingTop, paddingBottom, colour}) => {
     return (
         <>
         <div className={`bg-tbeige px-8 md:px-10 ${paddingTop} ${paddingBottom} xxl:px-32`}>
@@ -17,7 +17,7 @@ const ShopSection = ({quote, shops, illustration, paddingTop, paddingBottom}) =>
             <div className="grid md:grid-cols-3 gap-10 md:mb-10 xxl:gap-12">
                 {shops.map((shop, i) => (
                     <SoftMotion key={i}>
-                        <ShopCard title={shop.title} description={shop.description} thumbnail={shop.thumbnail.url}/>
+                        <ShopCard title={shop.title} description={shop.description} thumbnail={shop.thumbnail.url} link={shop.link} colour={colour}/>
                     </SoftMotion>
                 ))}
             </div>

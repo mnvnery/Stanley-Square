@@ -115,7 +115,9 @@ h1 {
   opacity: 1;
 }
 
-
+.paragraph a {
+  text-decoration: underline;
+}
 
 @media (max-width: 768px) {
   .embla__slide:first-child {
