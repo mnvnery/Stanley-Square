@@ -17,7 +17,7 @@ const ShopSection = ({quote, shops, illustration, paddingTop, paddingBottom, col
             <div className="grid md:grid-cols-3 gap-10 md:mb-10 xxl:gap-12">
                 {shops.map((shop, i) => (
                     <SoftMotion key={i}>
-                        <ShopCard title={shop.title} description={shop.description} thumbnail={shop.thumbnail.url} link={shop.link} colour={colour}/>
+                        <ShopCard title={shop.title} description={shop.description} thumbnail={shop.thumbnail.url} link={`https://${shop.link}`}  colour={colour}/>
                     </SoftMotion>
                 ))}
             </div>

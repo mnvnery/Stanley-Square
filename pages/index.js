@@ -195,7 +195,7 @@ export default function Home({data, events, shops}) {
               <div className='relative w-100 h-[45vh] md:h-[70vh] md:mr-48 mb-[25px]'>
                 <Image src={data.officeImage.url} objectFit='cover' layout='fill' className='rounded-3xl'/>
               </div>
-              <div dangerouslySetInnerHTML={{__html: data.officeText }} className='paragraph md:mr-36 sale-about text-2xl xxl:text-5xl self-end'/>
+              <div dangerouslySetInnerHTML={{__html: data.officeText }} className='paragraph md:mr-36 sale-about text-2xl xxl:text-5xl self-center'/>
           </div>
           </SoftMotion>
         </div>
