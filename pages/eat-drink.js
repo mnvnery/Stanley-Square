@@ -50,7 +50,7 @@ export default function EatDrink({data, shops}) {
                     <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox={viewBox}><path fill='#929292' d={svg} /></svg>
                 </div>
             </div>
-            <ShopSection shops={filteredShops} illustration={data.illustration.url} color="tgrey" paddingBottom="pb-10" />
+            <ShopSection shops={filteredShops} illustration={data.illustration.url} colour="tgrey" paddingBottom="pb-10" />
             <div className="hidden hover:bg-tgrey">hi</div>
             <Footer shops={shops}/>
         </>

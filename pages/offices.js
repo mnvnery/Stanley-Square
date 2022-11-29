@@ -52,8 +52,8 @@ export default function Offices({data, shops}) {
                     <div className='relative w-full mb-5 h-[40vh] md:h-[70vh]'>
                         <Image src={data.image1.url} layout='fill' objectFit='cover' className='rounded-3xl'/>
                     </div>
-                    <div dangerouslySetInnerHTML={{__html: data.pullOut}} className='md:w-2/3 md:leading-tight py-20 text-5xl md:text-6xl xxl:text-8xl'/>
-                    <div className='bg-[#39324C] text-tpink border-2 border-[#39324C] hover:text-[#39324C] hover:bg-transparent inline-block px-5 pb-1 rounded-full text-2xl md:text-3xl xxl:text-5xl xxl:pt-1 xxl:pb-2 xxl:px-10'>SIGN UP FOR INFORMATION</div>
+                    <div dangerouslySetInnerHTML={{__html: data.pullOut}} className='md:w-[70%] md:leading-tight py-20 text-5xl md:text-5xl xxl:text-8xl'/>
+                    <a href='https://the-classrooms.com' target='_blank' rel='noreferrer'><div className='bg-[#39324C] text-tpink border-2 border-[#39324C] hover:text-[#39324C] hover:bg-transparent inline-block px-5 pb-1 rounded-full text-2xl md:text-3xl xxl:text-5xl xxl:pt-1 xxl:pb-2 xxl:px-10'>SIGN UP FOR INFORMATION</div></a>
                 </div>
                 </LeftMotion>
                 <motion.div className='relative h-[70vh] md:h-auto'
@@ -66,7 +66,7 @@ export default function Offices({data, shops}) {
                     <div className='absolute w-1/2 top-20 md:top-[45vh] md:left-[-10vw] -rotate-12 hover:-rotate-[25deg] transition-all'>
                         <Image src={data.pages[1].url} width={data.pages[1].width} height={data.pages[1].height}/>
                     </div>
-                    <div className='absolute w-1/2 bottom-0 right-12 md:right-0 -rotate-6 hover:rotate-12 hover:bottom-[5vh] hover:right-10 transition-all'>
+                    <div className='absolute w-1/2 bottom-0 right-12 md:right-24 -rotate-6 hover:rotate-12 hover:bottom-[5vh] hover:right-14 transition-all'>
                         <Image src={data.pages[2].url} width={data.pages[2].width} height={data.pages[2].height}/>
                     </div>
                 </motion.div>
