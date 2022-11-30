@@ -99,7 +99,7 @@ const Footer = ({shops}) => {
 
             </div>
             <div className="flex justify-between pt-2 pb-20 mx-5 text-sm md:mx-8 md:text-2xl xxl:text-4xl xxl:mx-32 xxl:py-5 xxl:mb-20">
-                <div>Design by: <a href="studiodbd.com" target='_blank' className="underline hover:text-tpurple">StudioDBD</a></div>
+                <div>Design by: <a href="https://studiodbd.com" target='_blank' rel="noreferrer" className="underline hover:text-tpurple">StudioDBD</a></div>
                 <div>Copyright © 2022 Stanley Square</div>
             </div>
 

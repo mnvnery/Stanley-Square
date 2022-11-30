@@ -14,7 +14,7 @@ const ShopCard = ({title, description, thumbnail, link, colour}) => {
                 <div className="leading-tight mr-5">{description}</div>
             </div>
             :
-            <a href={`https://${link}`}target='_blank' rel="noreferrer">
+            <a href={`${link}`}target='_blank' rel="noreferrer">
                 <div className={`px-4 pt-5 pb-10 text-xl xxl:text-4xl xxl:px-8 xxl:py-10`}>
                     <div className="underline">{title}</div>
                     <div className="leading-tight mr-5">{description}</div>

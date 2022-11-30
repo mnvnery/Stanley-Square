@@ -58,7 +58,7 @@ export default function Home({data, events, shops}) {
   return (
     <>
 
-        <video autoPlay loop muted className='object-cover relative h-[40vh] w-screen md:mt-16 md:h-screen'>
+        <video autoPlay playsInline loop muted className='object-cover relative h-[40vh] w-screen md:mt-16 md:h-screen'>
           <source src="/bg-video.mp4" />
         </video>
       <LeftMotion>
