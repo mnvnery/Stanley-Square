@@ -38,7 +38,7 @@ export async function getStaticProps() {
 export default function WhatsOn({data, events, shops}) {
     const remainingEvents = events.filter(e => !data.highlightEvents.find(el => (e.title === el.title)))
     return (  
-        <>
+        <div className='overflow-x-hidden w-full'>
         <div className='w-full border-t border-white md:mt-16 mb-4 xxl:mb-10'></div>
         <div className='px-5 md:px-8 md:mx-0 xxl:mx-32'>
 
@@ -90,6 +90,6 @@ export default function WhatsOn({data, events, shops}) {
         </SoftMotion>
         </div>
         <Footer shops={shops}/>
-        </>
+        </div>
     )
 }

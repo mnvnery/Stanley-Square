@@ -34,7 +34,7 @@ export async function getStaticProps() {
 
 export default function Offices({data, shops}) {    
     return (  
-        <>
+        <div className='overflow-x-hidden w-full'>
         <div className='relative w-screen h-[45vh] md:mt-16 md:h-screen'>
             <Image src={data.heroImage.url} objectFit='cover' objectPosition='left bottom' layout='fill'/>
         </div>
@@ -94,6 +94,6 @@ export default function Offices({data, shops}) {
         </SoftMotion>
         </div>
         <Footer shops={shops}/>
-        </>
+        </div>
     )
 }

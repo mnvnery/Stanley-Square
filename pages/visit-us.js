@@ -36,7 +36,7 @@ export async function getStaticProps() {
 export default function VisitUs({data, shops}) {
     const questionsAnswers = data.faqs
     return (  
-        <>
+        <div className='overflow-x-hidden w-full'>
         <HeroSection image={data.heroImage.url} text={data.heroText} />
         <div className='bg-tpurple text-black pt-10 px-8 md:px-10 pb-20 xxl:px-32'>
             <PageTitle title='Visit Us' borderColour='border-black'/>
@@ -93,6 +93,6 @@ export default function VisitUs({data, shops}) {
             <Accordion questionsAnswers={questionsAnswers}/>
         </div>
         <Footer shops={shops}/>
-        </>
+        </div>
     )
 }

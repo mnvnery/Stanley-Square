@@ -56,7 +56,7 @@ function color(sector) {
 
 export default function Home({data, events, shops}) {
   return (
-    <>
+    <div className='overflow-x-hidden w-full'>
 
         <video autoPlay playsInline loop muted className='object-cover relative h-[40vh] w-screen md:mt-16 md:h-screen bg-white'>
           <source src="/bg-video.mp4" />
@@ -202,6 +202,6 @@ export default function Home({data, events, shops}) {
     
       </SoftMotion>
       <Footer shops={shops}/>
-    </>
+    </div>
   )
 }
