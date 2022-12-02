@@ -1,5 +1,5 @@
 const siteMetadata = {
-    email: 'tony@stanleysquare.co.uk',
+    email: 'hello@stanleysquare.co.uk',
     phone: '0161 962 1086',
     twitter: 'https://twitter.com/stanleysq_sale',
     instagram: 'https://www.instagram.com/stanleysquaresale/',
