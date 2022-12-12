@@ -45,7 +45,7 @@ export default function Services({data, shops}) {
     const viewBox = '0 0 555.25 92.02'
 
     return (  
-        <>
+        <div className='overflow-x-hidden w-full'>
             <HeroSection image={data.heroImg.url} text={data.heroText} />
             <ServicesIntro title='Services' image1={data.image1.url} image2={data.image2.url} text1={data.paragraph1} text2={data.paragraph2} pullOutQuote={data.pullOutQuote} quoteImage={data.quoteImage.url} svgPath={svg} viewBox={viewBox} />
             <div className="bg-tbeige mt-[-10px]">
@@ -56,6 +56,6 @@ export default function Services({data, shops}) {
             <ShopSection quote={data.shopsIntro} shops={filteredShops} illustration={data.illustration.url} colour="tbrown" paddingBottom='pb-5' />
             <div className="hidden hover:bg-tbrown">hi</div>
             <Footer shops={shops}/>
-        </>
+        </div>
     )
 }

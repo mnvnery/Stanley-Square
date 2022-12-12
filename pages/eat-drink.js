@@ -42,7 +42,7 @@ export default function EatDrink({data, shops}) {
     const svg = 'M0,0C27.24,53.39,82.79,89.95,146.87,89.95h0c63.33,0,118.31-37.59,145.9-89.95'
     const viewBox = '0 0 292.77 89.95'
     return (  
-        <>
+        <div className='overflow-x-hidden w-full'>
             <HeroSection image={data.heroImg.url} text={data.heroText} />
             <FoodIntro title='Eat & Drink' image1={data.image1.url} image2={data.image2.url} text1={data.paragraph1} text2={data.paragraph2} pullOutQuote={data.pullOutQuote} quoteImage={data.quoteImage.url} svgPath={svg} viewBox={viewBox} />
             <div className="bg-tbeige mt-[-2px]">
@@ -53,6 +53,6 @@ export default function EatDrink({data, shops}) {
             <ShopSection shops={filteredShops} illustration={data.illustration.url} colour="tgrey" paddingBottom="pb-10" />
             <div className="hidden hover:bg-tgrey">hi</div>
             <Footer shops={shops}/>
-        </>
+        </div>
     )
 }

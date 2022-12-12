@@ -42,12 +42,12 @@ function color(sector) {
 export default function Retail({data, shops}) {
     const filteredShops = shops.filter(shop => shop.category == 'Retail');
     return (  
-        <>
+        <div className='overflow-x-hidden w-full'>
             <HeroSection image={data.heroImg.url} text={data.heroText} />
             <ShopIntro title='Shop' image1={data.image1.url} image2={data.image2.url} text1={data.paragraph1} text2={data.paragraph2} bgColor='bg-tred' textColor='text-black'/>
             <ShopSection quote={data.shopsIntro} shops={filteredShops} illustration={data.illustration.url} colour="tred" paddingTop='md:pt-20' />
             <div className="hidden hover:bg-tred">hi</div>
             <Footer shops={shops}/>
-        </>
+        </div>
     )
 }
