@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@bradgarropy/next-google-analytics": "^1.0.2",
     "embla-carousel-react": "^7.0.3",
     "framer-motion": "^7.6.1",
     "graphql": "^16.6.0",
