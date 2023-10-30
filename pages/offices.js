@@ -66,9 +66,11 @@ export default function Offices({data, shops}) {
                     <div className='absolute w-1/2 top-20 md:top-[45vh] md:left-[-10vw] -rotate-12 hover:-rotate-[25deg] transition-all'>
                         <Image src={data.pages[1].url} width={data.pages[1].width} height={data.pages[1].height}/>
                     </div>
+                    {/*
                     <div className='absolute w-1/2 bottom-0 right-12 md:right-24 -rotate-6 hover:rotate-12 hover:bottom-[5vh] hover:right-14 transition-all'>
                         <Image src={data.pages[2].url} width={data.pages[2].width} height={data.pages[2].height}/>
                     </div>
+                    */}
                 </motion.div>
             </div>
             <div className='grid md:grid-cols-3 gap-8 text-xl md:text-lg'>
