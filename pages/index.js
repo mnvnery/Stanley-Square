@@ -59,7 +59,7 @@ export default function Home({data, events, shops}) {
     <div className='overflow-x-hidden w-full'>
 
         <video autoPlay playsInline loop muted className='object-cover relative h-[40vh] w-screen md:mt-16 md:h-screen bg-white'>
-          <source src="https://ucarecdn.com/4113a97c-f2ea-448d-80b2-ab28fc8ef016/StanleySquareHeaderHDweb.mp4" />
+          <source src="/stanley-sq-2025.mp4" />
         </video>
       <LeftMotion>
       <div className='my-12 mx-8 flex md:my-20 xxl:m-32'>
